@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor: default;    
+}
+
+$colores: (
+    colorOne : #fbf8f3,
+    whiteColor : #ffffff,
+    blueColor : #4d13d1,
+    blackColor: #000,
+    grayColor: #4f4f4f,
+    grayColorOne: #a8a8a860,
+    goldenColor:#ff962a,
+    greenColor:#45B19E,
+    redColor:#D64933,
+);
+
+.contenedor{
+    max-width:1140px;
+    margin:0 auto;
+    width:95%;
+}
+
+
+.contenedorOne{
+    max-width:463px;
+    margin:0 auto;
+    width:95%;
+}

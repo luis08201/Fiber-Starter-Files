@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fiber Starter Files</title>
+</head>
+<body>
+    <main class="main">
+        <section class="login">
+            <div class="login__main contenedorOne">
+                <div class="login__logo">
+                    <a href="index.html" class="login__logo--link">
+                        <h3 class="login__middleheading">fiber</h3>
+                    </a>
+                </div>
+                <h2 class="login__secondheading">Create your Fiber account</h2>
+                <form action="" class="login__form">
+                    <div class="login__name login__box" id="nameBox">
+                        <label for="" class="login__label">your name</label>
+                        <input type="text" class="login__input nombre" placeholder="John Doe">
+                        <i class="login__name--ico"></i>
+                        <span class="login__name--span"></span>
+                    </div>
+                    <div class="login__email login__box" id="emailBox">
+                        <label for="" class="login__label">E-mail</label>
+                        <input type="email" class="login__input correo" placeholder="john@example.com">
+                        <i class="login__email--ico"></i>
+                        <span class="login__email--span"></span>
+                    </div>
+                    <div class="login__password login__box" id="passwordBox">
+                        <label for="" class="login__label">password</label>
+                        <input type="password" class="login__input password" placeholder="At least 8 Characters">
+                        <i class="login__password__ico fas fa-eye" id="showPassword"></i>
+                        <i class="login__password--Ico"></i>
+                        <span class="login__password--span"></span>
+                    </div>
+                    <div class="login__disclaimer">
+                        <input type="checkbox" name="" id="" class="input__checkbox">
+                        <span class="login__span">
+                            By creating an account on Fiber, you agree to the <a href="#" class="login__link">Terms & Conditions</a>.
+                        </span>
+                    </div>
+                    <div class="login__button">
+                        <a href="#" class="login__cta">create fiber account</a>
+                    </div>
+                    <div class="login__account">
+                        <span class="login__span">Already have an account? <a href="#" class="login__link">Sign In</a></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner__main contenedorOne">
+                <div class="banner__slider swiper">
+                    <div class="banner__wrapper swiper-wrapper">
+                        <figure class="banner__slide swiper-slide">
+                            <img src="Assets/Sign Up Image.png" alt="" class="banner__photo">
+                        </figure>
+                        <figure class="banner__slide swiper-slide">
+                            <img src="Assets/Slide-2.jpg" alt="" class="banner__photo">
+                        </figure>
+                        <figure class="banner__slide swiper-slide">
+                            <img src="Assets/Slide-3.jpg" alt="" class="banner__photo">
+                        </figure>
+                        <figure class="banner__slide swiper-slide">
+                            <img src="Assets/Slide-4.jpg" alt="" class="banner__photo">
+                        </figure>
+                    </div>
+                   <div class="banner__title">
+                       <h3 class="banner__middleheading">Unparalleled Templates</h3>
+                       <p class="banner__paragraph">
+                        Crafted by a team of professional designers, our templates are unparalleled in the market.
+
+                       </p>
+                   </div>
+                   <div class="banner__pagination">
+                       <a href="#" class="banner__pag"></a>
+                       <a href="#" class="banner__pag"></a>
+                       <a href="#" class="banner__pag"></a>
+                       <a href="#" class="banner__pag"></a>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/sliderLogin.js"></script>
+    <script src="js/showPassword.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

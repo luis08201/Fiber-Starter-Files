@@ -1,0 +1,291 @@
+@import "resource";
+
+body,
+input,
+label {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "login banner";
+}
+
+.login {
+  grid-area: login;
+  background-color: map-get($colores, whiteColor);
+  padding: 50px 0;
+  &__logo {
+    padding: 15px 0 65px;
+  }
+  &__logo--link{
+    color:map-get($colores,blackColor);
+    text-decoration: none;
+  }
+  &__middleheading {
+    cursor: pointer;
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+
+  &__secondheading {
+    font-size: 32px;
+    padding-bottom: 60px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__label {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  &__name {
+    position: relative;
+    &--span{
+      position: absolute;
+      bottom:-20px;
+      right:5px;
+      font-size: 12px;
+      font-style: italic;
+      color:map-get($colores,blueColor);
+    }
+    &--ico {
+      position: absolute;
+      top: 70%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+      color: map-get($colores, grayColor);
+      cursor: pointer;
+      transition:color 0.5s 0s ease;
+    }
+    &--ico.fa-check-circle{
+      color:map-get($colores,blueColor);
+    }
+    &--ico.fa-times-circle{
+      color:map-get($colores,redColor);
+    }
+    &--ico.fa-exclamation-circle{
+      color:map-get($colores,goldenColor);
+    }
+  }
+
+  &__email{
+    position: relative;
+    &--span{
+      position: absolute;
+      bottom:-20px;
+      right:5px;
+      font-size: 12px;
+      font-style: italic;
+      color:map-get($colores,blueColor);
+    }
+    &--ico {
+      position: absolute;
+      top: 70%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+      color: map-get($colores, grayColor);
+      cursor: pointer;
+      transition:color 0.5s 0s ease;
+    }
+    &--ico.fa-check-circle{
+      color:map-get($colores,blueColor);
+    }
+    &--ico.fa-times-circle{
+      color:map-get($colores,redColor);
+    }
+    &--ico.fa-exclamation-circle{
+      color:map-get($colores,goldenColor);
+    }
+  }
+
+  &__password {
+    position: relative;
+    &__ico {
+      position: absolute;
+      top: 70%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+      color: map-get($colores, grayColor);
+      cursor: pointer;
+    }
+    &--span{
+      position: absolute;
+      bottom:-20px;
+      right:5px;
+      font-size: 12px;
+      font-style: italic;
+      color:map-get($colores,blueColor);
+    }
+    &--Ico {
+      position: absolute;
+      top: 70%;
+      right: 5%;
+      transform: translate(-50%, -50%);
+      color: map-get($colores, grayColor);
+      cursor: pointer;
+      transition:color 0.5s 0s ease;
+    }
+    &--Ico.fa-check-circle{
+      color:map-get($colores,blueColor);
+    }
+    &--Ico.fa-times-circle{
+      color:map-get($colores,redColor);
+    }
+    &--Ico.fa-exclamation-circle{
+      color:map-get($colores,goldenColor);
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid map-get($colores, grayColorOne);
+  }
+
+  &__disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__span {
+    font-size: 17px;
+  }
+
+  &__link {
+    color: map-get($colores, blueColor);
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__cta {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: map-get($colores, blueColor);
+    color: map-get($colores, whiteColor);
+    width: 100%;
+    padding: 16px 0;
+    display: block;
+    border-radius: 8px;
+    transition: opacity 0.5s 0s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__account {
+    text-align: center;
+  }
+}
+
+.banner {
+  grid-area: banner;
+  background-color: map-get($colores, blueColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  &__title {
+    text-align: center;
+    color: map-get($colores, whiteColor);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__middleheading {
+    font-size: 32px;
+  }
+  &__paragraph {
+    opacity: 0.8;
+    font-weight: 300;
+  }
+  &__pagination {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-areas: "login login";
+  }
+  .login {
+    grid-area: login;
+  }
+  .banner {
+    grid-area: banner;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .login {
+    &__span {
+      font-size: 14px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+
+    &__cta {
+      font-size: 15px;
+    }
+
+    &__label {
+      font-size: 15px;
+    }
+
+    &__middleheading {
+      font-size: 18px;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background: map-get($colores, whiteColor) !important;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.5s 0s ease;
+}
